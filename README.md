@@ -1,10 +1,10 @@
 # Credit_Risk_Analysis
 
-##Overview
+## Overview
 
 I've been working with my friend Jill to build my skillset in data preparation, statistical reasoning, and machine learning. Now I've been tasked with trying to determine credit card risk using a dataset from LendingClub. Since credit risk is an unbalanced classification problem, with bad loans dwarfed by good loans, I'll be using a number of different tools to attempt my prediction: the RandomOverSampler and SMOTE algorithms to oversample the data, ClusterCentroids algorithm to undersample the data, the SMOTEENN algorithm to both over- and undersample the data, and finally, two ensemble machine learning models to reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier. I'll evaluate the performance of each model and determine, if possible, which will be best to use. 
 
-##Results
+## Results
 
 Each model returned the following results:
 
@@ -38,7 +38,7 @@ Each model returned the following results:
   - Recall
      - High-Risk: 69%
      - Low-Risk: 40%
-![](Resources/undersampling.PNG)
+![](resources/undersampling.PNG)
 
 
 - SMOTEENN Combination Sampling
@@ -49,7 +49,7 @@ Each model returned the following results:
   - Recall
      - High-Risk: 78%
      - Low-Risk: 57%
-![](Resources/smoteenn.PNG)
+![](resources/smoteenn.PNG)
 
 
 - Balanced Random Forest Classifier
@@ -60,7 +60,7 @@ Each model returned the following results:
   - Recall
      - High-Risk: 70%
      - Low-Risk: 87%
-![](Resources/balanced_random_forest.PNG)
+![](resources/balanced_random_forest.PNG)
 
 
 - Easy Ensemble Classifier
@@ -71,10 +71,10 @@ Each model returned the following results:
   - Recall
      - High-Risk: 92%
      - Low-Risk: 94%
-![](Resources/easyensembleclassifier.PNG)
+![](resources/easyensembleclassifier.PNG)
 
 
-##Summary
+## Summary
 
 Out of our models, Undersampling performed the weakest overall. It did score slightly higher on High-Risk Recall over SMOTE Oversampling, but unfortunately that was its only bright spot with regards to this dataset. Random Oversampling, in turn, slightly edged out SMOTE Oversampling in performance with this data, while combining both over- and undersampling in with the SMOTEENN algorithm proved to be the best approach in the over- vs. under- sampling debate with the LendingClub data. However, none of these algorithms approach a usefulness for our predictions. 
 
